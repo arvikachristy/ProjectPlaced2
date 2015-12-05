@@ -40,7 +40,9 @@ body {
 .grid_9,
 .grid_10,
 .grid_11,
+.grid_50,
 .grid_101,
+.grid_102,
 .grid_12 {
   display: inline;
   float: left;
@@ -93,10 +95,19 @@ body {
 }
 
 .container_12 .grid_101 {
-  width: 450px;
+  width: 460px;
 }
+
+.container_12 .grid_50 {
+  width: 1020px;
+}
+
+.container_12 .grid_102 {
+  width: 420px;
+}
+
 .container_12 .grid_4 {
-    width: 450px;
+    width: 950px;
 }
 
 .container_12 .grid_5 {
