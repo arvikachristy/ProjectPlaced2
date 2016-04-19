@@ -93,6 +93,14 @@ p {
 	line-height: 120%;
 }
 
+#mediump0{
+	margin-bottom: 20px;
+	text-align: justify;
+	line-height: 120%;
+	font-size: 16pt;
+	font: bold italic 20px;
+}
+
 #mediump{
 	margin-bottom: 20px;
 	text-align: justify;
@@ -592,7 +600,7 @@ a.gal:hover img{
 }
 
 .blog {
-	padding-top: 42px;
+	padding-top: 12px;
 	overflow: hidden;
 }
 
@@ -600,7 +608,7 @@ a.gal:hover img{
 	margin-top: 4px;
 	margin-right: 20px;
 	float: left;
-	border: 5px solid #bfdde8;
+	border: 5px;
 	border-top-width: 8px;
 	border-bottom-width: 8px;
 }
@@ -689,7 +697,7 @@ ul.list.l1+ul.list.l1 {
 }
 
 h2.head1 {
-	padding-top: 93px;
+	padding-top: 53px;
 	font-weight: 300;
 	margin-bottom: 36px;
 	color: #000;

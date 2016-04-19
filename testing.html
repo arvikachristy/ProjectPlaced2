@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Testing</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/unitPP.png">
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/touchTouch.jquery.js"></script>
+		<script src="js/TMForm.js"></script>
+		<script>
+		$(document).ready(function(){
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		})
+		</script>
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header>
+			<div class="container_12">
+				<div class="grid_12">
+					<h1><a href="index.html"><img src="images/logo.png" alt="Boo House"></a></h1>
+					<div class="menu_block">
+						<nav id="bt-menu" class="bt-menu">
+							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+							<ul>
+								<li class="bt-icon"><a href="index.html">Home</a></li>
+								<li class="bt-icon"><a href="ourproject.html">Our Project</a></li>
+								<li class="bt-icon"><a href="research.html">Research</a></li>
+								<li class="bt-icon"><a href="Documentation.html">Documentation</a></li>
+								<li class="bt-icon"><a href="design.html">Prototypes</a></li>
+								<li class="current bt-icon"><a href="testing.html">Testing</a></li></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</header>
+<!--==============================Content=================================-->
+		<div class="gray_block gb1">
+			<div class="container_12">
+				<h2><center>Testing</center></h2>
+				<center><img src="images/testing.png"></center>
+				<div class="blog bd2">
+					<div class="blog">
+						<div class="extra_wrapper">
+							<div class="text1">
+							</div>
+							<div class="text1 col2">Providing tests for our code is a way to ensure that our code is working correctly. It is important because it can help us to identify code which causes errors, making debugging easier and saving us time. Of course, it would be preferable to have automated testing to help make the developing process simpler. After making some changes to the system, we can run the tests to make sure the code is still running as intended without having to go through the time consuming process of manual testing. Here are some initial strategies for testing the system that we will be using in the future. </div>						
+						</div>
+					</div>
+				</div>
+				<div class="blog bd2">
+					<h2 class="head1">Unit Testing</h2>
+						<p id="mediump0">Unit testing is a process in software development where we test individual units of code (small, highly specific areas of code) independently of other code to make sure that they are working as intended. We will focus on making as many unit tests as we can, especially for custom methods.</p>
+				</div>
+				<div class="grid_4">
+					<h2 class="head1">Functional Testing</h2>
+					<div class="map">
+						<p id="mediump0">Functional tests ensure that the functional requirements have been met.</p>
+					</div>
+				</div>
+				<div class="grid_4">
+					<h2 class="head1">Integration Testing</h2>
+					<div class="map">
+						<p id="mediump0">Integration tests cover different aspects of the system and make sure that the code is working together. For our platform, we will be writing the back end in Django and the front end in AngularJS. It is important that these aspects not only work well individually, but together as well. We have to ensure that data flow is also handled correctly.</p>
+					</div>
+				</div>
+				<div class="grid_4">
+					<h2 class="head1">User Acceptance Testing</h2>
+					<div class="map">
+					<p id="mediump0">To ensure satisfaction in our platform, we will be conducting user acceptance testing with our client and potential users on a regular basis.
+					<br>If possible, we will be looking at using a test driven development approach, where we write the necessary tests before writing the actual code. However, to do this we will have to learn how to conduct tests properly before getting started. If we find that it is difficult to recognise all the small components of the system at the beginning, we may look at a test after approach as well.</p><br><br>
+					</div>
+				</div>			
+
+
+				<div class="grid_4">
+					<h2 class="head1">Django Testing</h2>
+					<div class="blog">
+					<p id="mediump0"><img src="images/django.png">
+						We can do automated testing in Django by using a collection of tests (a test suite). Django has a Test Execution Framework and various utilities to help us verify that our code is working as expected. We can write tests in Django using the unittest module, which is built into the Python standard library. We can use it to conduct both unit tests and integration tests. There are other tools/modules (and other Python Test Frameworks) that can be used (such as doctest and nose). However, when testing Django apps, tests written in unittest run the fastest, and offer a much more robust solution for testing. Then to add the tests to the Django project, we will have to add a tests.py file and put our tests inside of there. Alternatively, we can also define a tests directory.  Django documentation has helpful information and many examples that we will be using.</div>
+				</div>	
+				<div class="grid_4">
+					<h2 class="head1">AngularJS Testing</h2>
+					<div class="blog">
+					<p id="mediump0">The AngularJS documentation recommends the following tools for testing.</p>
+					<p id="mediump">Karma</p>
+					<p id="mediump0"><img src="images/karma.png"><br>
+						Karma is a test runner written by the Angular team. It is a Javascript command line tool that creates a web server, which will load our source code and execute our tests. It is useful as it can execute tests in multiple browsers. We will mainly use it for unit testing, but Karma can also be used for integration testing as well.</div>
+					<div class="blog">
+					<p id="mediump">Jasmine</p>
+					<p id="mediump0"><img src="images/jasmine.png">
+						Jasmine is one of the most popular development frameworks used for testing angular applications. This framework also provides functions to help with structuring tests and keeping them well documented, and so it will be a useful tool to use. For the testing framework, AngularJS can be tested using any JavaScript unit testing framework. However, Jasmine is commonly used and we will be following the recommendation in the AngularJS documentation and using it as well. There seems to be really good documentation for Jasmine, which will support our testing.</div><br><br>
+					</div>
+					<p id="mediump0">Other Testing Frameworks and tools can be used (such as Mocha, Chai, Sinon, and many more). Although we will mainly be looking at unit tests, there is also a recommended tool for end to end testing called Protractor (which uses Jasmine for its test syntax).</p>
+				</div>	
+
+				<!--<div class="grid_8">
+					<h2 class="head1">Contact Form</h2>
+					<form id="form">
+						<div class="success_wrapper">
+							<div class="success-message">Contact form submitted</div>
+						</div>
+						<label class="name">
+							<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+							<span class="empty-message">*This field is required.</span>
+							<span class="error-message">*This is not a valid name.</span>
+						</label>
+						<label class="email">
+							<input type="text" placeholder="E-mail:" data-constraints="@Required @Email" />
+							<span class="empty-message">*This field is required.</span>
+							<span class="error-message">*This is not a valid email.</span>
+						</label>
+						<label class="phone">
+							<input type="text" placeholder="Phone:" data-constraints="@Required @JustNumbers"/>
+							<span class="empty-message">*This field is required.</span>
+							<span class="error-message">*This is not a valid phone.</span>
+						</label>
+						<label class="message">
+							<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+							<span class="empty-message">*This field is required.</span>
+							<span class="error-message">*The message is too short.</span>
+						</label>
+						<div>
+							<div class="clear"></div>
+							<div class="btns">
+								<a href="#" data-type="reset" class="btn">clear</a>
+								<a href="#" data-type="submit" class="btn">send</a>
+							</div>
+						</div>
+					</form>
+				</div>-->
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="socials">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-google-plus"></a>
+					</div>
+					<div class="clear"></div>
+					<div class="copy">
+						Vika Christy and Anita Ghoddoomi-Zadeh&copy; 2015<br>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script>
+		$(document).ready(function(){
+			$(".bt-menu-trigger").toggle(
+				function(){
+					$('.bt-menu').addClass('bt-menu-open');
+				},
+				function(){
+					$('.bt-menu').removeClass('bt-menu-open');
+				}
+			);
+		});
+		</script>
+	</body>
+</html>
