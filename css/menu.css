@@ -15,7 +15,7 @@ nav.bt-menu  ul li {
 	color: #848282;
 }
 nav.bt-menu  ul li:first-child+li+li+li {
-	margin-right: 160px;
+	margin-right: 260px;
 }
 
 .bt-overlay {
