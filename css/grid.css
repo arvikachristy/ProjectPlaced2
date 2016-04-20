@@ -26,6 +26,11 @@ body {
   width: 960px;
 }
 
+.containerMe {
+  width: 960px;
+}
+
+
 /* `Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
 
@@ -140,6 +145,10 @@ body {
 
 .container_12 .grid_12 {
   width: 940px;
+}
+
+.gridme {
+
 }
 
 /* `Prefix Extra Space >> 12 Columns
