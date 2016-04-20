@@ -14,8 +14,8 @@ nav.bt-menu  ul li {
 	font: bold 18px/26px 'Open Sans', sans-serif;
 	color: #848282;
 }
-nav.bt-menu  ul li:first-child+li+li {
-	margin-right: 120px;
+nav.bt-menu  ul li:first-child+li+li+li {
+	margin-right: 160px;
 }
 
 .bt-overlay {
@@ -63,7 +63,7 @@ nav.bt-menu  ul li a:hover, nav ul li.current  {
 .bt-menu-trigger {
 	position: absolute;
 	top: 0;
-	left: 50%;
+	left: 47%;
 	z-index: 100;
 	display: block;
 	margin-left: -27px;
