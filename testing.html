@@ -52,7 +52,7 @@
 						<div class="extra_wrapper">
 							<div class="text1">
 							</div>
-							<div class="text1 col2">Providing tests for our code is a way to ensure that our code is working correctly. It is important because it can help us to identify code which causes errors, making debugging easier and saving us time. Of course, it would be preferable to have automated testing to help make the developing process simpler. After making some changes to the system, we can run the tests to make sure the code is still running as intended without having to go through the time consuming process of manual testing. Here are some initial strategies for testing the system that we will be using in the future. </div>						
+							<!-- <div class="text1 col2">Initial Testing Strategies</div> -->						
 						</div>
 					</div>
 				</div>
@@ -69,54 +69,73 @@
 
 				<br><br>
 				</div>
-<!--==============================Button direct=================================-->				
-
-				<div class="blog bd2" id="unit">
+<!--==============================Button direct=================================-->		
+				<br>
+				<h3  style="text-align: center">Initial Testing Strategies</h3>
+				
+					<h2 class="head1">Introduction</h2>
+					<div id="mediump0">Providing tests for our code is a way to ensure that our code is working correctly. It is important because it can help us to identify code which causes errors, making debugging easier and saving us time. Of course, it would be preferable to have automated testing to help make the developing process simpler. After making some changes to the system, we can run the tests to make sure the code is still running as intended without having to go through the time consuming process of manual testing. Here are some initial strategies for testing the system that we will be using in the future.<div>
+		
 					<h2 class="head1">Unit Testing</h2>
-						<p id="mediump0">Unit testing is a process in software development where we test individual units of code (small, highly specific areas of code) independently of other code to make sure that they are working as intended. We will focus on making as many unit tests as we can, especially for custom methods.</p>
-				</div>
-				<div class="grid_4" id="functional">
+					<div id="mediump0">Unit testing is a process in software development where we test individual units of code (small, highly specific areas of code) independently of other code to make sure that they are working as intended. We will focus on making as many unit tests as we can, especially for custom methods.</div>
+				
 					<h2 class="head1">Functional Testing</h2>
-					<div class="map">
-						<p id="mediump0">Functional tests ensure that the functional requirements have been met.</p>
-					</div>
-				</div>
-				<div class="grid_4" id="integration">
+					<div id="mediump0">Functional tests ensure that the functional requirements have been met.</div>
+				
 					<h2 class="head1">Integration Testing</h2>
-					<div class="map">
-						<p id="mediump0">Integration tests cover different aspects of the system and make sure that the code is working together. For our platform, we will be writing the back end in Django and the front end in AngularJS. It is important that these aspects not only work well individually, but together as well. We have to ensure that data flow is also handled correctly.</p>
-					</div>
-				</div>
-				<div class="grid_4" id="useraccept">
+					<div id="mediump0">Integration tests cover different aspects of the system and make sure that the code is working together. For our platform, we will be writing the back end in Django and the front end in AngularJS. It is important that these aspects not only work well individually, but together as well. We have to ensure that data flow is also handled correctly.</div>
+			
 					<h2 class="head1">User Acceptance Testing</h2>
-					<div class="map">
-					<p id="mediump0">To ensure satisfaction in our platform, we will be conducting user acceptance testing with our client and potential users on a regular basis.
-					<br>If possible, we will be looking at using a test driven development approach, where we write the necessary tests before writing the actual code. However, to do this we will have to learn how to conduct tests properly before getting started. If we find that it is difficult to recognise all the small components of the system at the beginning, we may look at a test after approach as well.</p><br><br>
-					</div>
-				</div>			
-
-
-				<div class="grid_4">
-					<h3 id="technical"> Technical Testing</h3>
-					<h2 class="head1">Django Testing</h2>
+					<div id="mediump0">To ensure satisfaction in our platform, we will be conducting user acceptance testing with our client and potential users on a regular basis. If possible, we will be looking at using a test driven development approach, where we write the necessary tests before writing the actual code. However, to do this we will have to learn how to conduct tests properly before getting started. If we find that it is difficult to recognise all the small components of the system at the beginning, we may look at a test after approach as well.</div>
+			
 					<div class="blog">
-					<p id="mediump0"><img src="images/django.png">
-						We can do automated testing in Django by using a collection of tests (a test suite). Django has a Test Execution Framework and various utilities to help us verify that our code is working as expected. We can write tests in Django using the unittest module, which is built into the Python standard library. We can use it to conduct both unit tests and integration tests. There are other tools/modules (and other Python Test Frameworks) that can be used (such as doctest and nose). However, when testing Django apps, tests written in unittest run the fastest, and offer a much more robust solution for testing. Then to add the tests to the Django project, we will have to add a tests.py file and put our tests inside of there. Alternatively, we can also define a tests directory.  Django documentation has helpful information and many examples that we will be using.</div>
-				</div>	
-				<div class="grid_4">
-					<h2 class="head1">AngularJS Testing</h2>
-					<div class="blog">
+					<h2 class="head1">Testing Django</h2>
+					<div id="mediump0"><img src="images/django.png">We can do automated testing in Django by using a collection of tests (a test suite). Django has a Test Execution Framework and various utilities to help us verify that our code is working as expected. We can write tests in Django using the unittest module, which is built into the Python standard library. We can use it to conduct both unit tests and integration tests. There are other tools/modules (and other Python Test Frameworks) that can be used (such as doctest and nose). However, when testing Django apps, tests written in unittest run the fastest, and offer a much more robust solution for testing. Then to add the tests to the Django project, we will have to add a tests.py file and put our tests inside of there. Alternatively, we can also define a tests directory.  Django documentation has helpful information and many examples that we will be using.</div>
+
+					<h2 class="head1">Testing AngularJS</h2>
 					<p id="mediump0">The AngularJS documentation recommends the following tools for testing.</p>
 					<p id="mediump">Karma</p>
-					<p id="mediump0"><img src="images/karma.png"><br>
+					<div id="mediump0"><img src="images/karma.png"><br>
 						Karma is a test runner written by the Angular team. It is a Javascript command line tool that creates a web server, which will load our source code and execute our tests. It is useful as it can execute tests in multiple browsers. We will mainly use it for unit testing, but Karma can also be used for integration testing as well.</div>
-					<div class="blog">
+					<br>
 					<p id="mediump">Jasmine</p>
-					<p id="mediump0"><img src="images/jasmine.png">
-						Jasmine is one of the most popular development frameworks used for testing angular applications. This framework also provides functions to help with structuring tests and keeping them well documented, and so it will be a useful tool to use. For the testing framework, AngularJS can be tested using any JavaScript unit testing framework. However, Jasmine is commonly used and we will be following the recommendation in the AngularJS documentation and using it as well. There seems to be really good documentation for Jasmine, which will support our testing.</div><br><br>
+					<div id="mediump0"><img src="images/jasmine.png">
+						Jasmine is one of the most popular development frameworks used for testing angular applications. This framework also provides functions to help with structuring tests and keeping them well documented, and so it will be a useful tool to use. For the testing framework, AngularJS can be tested using any JavaScript unit testing framework. However, Jasmine is commonly used and we will be following the recommendation in the AngularJS documentation and using it as well. There seems to be really good documentation for Jasmine, which will support our testing.</div><br>
+					<div id="mediump0">Other Testing Frameworks and tools can be used (such as Mocha, Chai, Sinon, and many more). Although we will mainly be looking at unit tests, there is also a recommended tool for end to end testing called Protractor (which uses Jasmine for its test syntax).</div>
 					</div>
-					<p id="mediump0">Other Testing Frameworks and tools can be used (such as Mocha, Chai, Sinon, and many more). Although we will mainly be looking at unit tests, there is also a recommended tool for end to end testing called Protractor (which uses Jasmine for its test syntax).</p>
-				</div>	
+
+				<h3  style="text-align: center">Our Django Tests</h3>
+
+					<div id="mediump0">We wrote some simple tests in Django to make sure that our backend code was working as intended. We followed a test-after approach, where we wrote the code and tested at the end. The tests helped us to discover issues, which we then promptly fixed, and now assure us that everything is working correctly.</div>
+					<div id="mediump0"><br>We are using Django's unittest library to conduct the tests. There were also other tools (as explained above in the initial testing strategies section), but we decided to use unittest as it ran the fastest, and there was a lot of useful information in the Django documentation which we could use. We mainly tested our views because it included most of the code running the backend of our platform.</div>
+
+					<br><br><center><img src="images/DjangoTest/01RenderTest.png" align="middle"></center>
+					<div id="mediump0"><br>The above test is an example of one of the tests we wrote to check whether the page was rendering correctly without any errors. We use the context property of the HttpResponse to make sure that the page is not only rendering properly, but delivering the correct content to the user.</div>
+
+					<br><br><center><img src="images/DjangoTest/02DisplayTest.png" align="middle"></center>
+					<div id="mediump0"><br>We have also created tests to check whether the correct data was being displayed on the page. In the above example, we check whether the task table on the index page displays all the tasks we want. We created a shortcut function to create a task object and then made sure it matched with what the page was displaying using AssertQueryEqual.</div>
+
+					<br><br><center><img src="images/DjangoTest/03PostTest.png" align="middle"></center>
+					<div id="mediump0"><br>We also had to test slightly more complicated views which were handling POST requests. We used the self.client.post method to send a mock POST request to the view (with data we provided), and then checked that the view was handling that data correctly.</div>
+
+					<br><br><center><img src="images/DjangoTest/04NonsensePost.png" align="middle"></center>
+					<div id="mediump0"><br>In addition, we checked that sending POST requests with random data produced a Http404 response in some views, as we expected.</div>
+
+					<br><br><center><img src="images/DjangoTest/ranTests.png" align="middle"></center><br>
+
+					<h2 class="head1">Resources</h2>
+					<div id="mediump0">
+					The Django documentation itself was a great resoource to aid us with testing:
+					<br>An overview to testing: <a href="https://docs.djangoproject.com/en/1.9/topics/testing/overview/">https://docs.djangoproject.com/en/1.9/topics/testing/overview/</a>
+					<br>Django's 5th tutorial covering testing: <a href="https://docs.djangoproject.com/en/1.9/intro/tutorial05/">https://docs.djangoproject.com/en/1.9/intro/tutorial05/</a>
+					<br>Django's complete testing tools page: <a href="https://docs.djangoproject.com/en/1.9/topics/testing/tools/">https://docs.djangoproject.com/en/1.9/topics/testing/tools/</a>
+
+					<br><br>There were also other websites that were very useful resources:
+					<br>Toast Driven - A guide to testing in Django: <a href="http://toastdriven.com/blog/2011/apr/10/guide-to-testing-in-django/"><br>http://toastdriven.com/blog/2011/apr/10/guide-to-testing-in-django/</a>
+					<br>Wilfred Hughes - Testing Django websites: <a href="http://www.wilfred.me.uk/blog/2014/07/06/testing-django-websites/"><br>http://www.wilfred.me.uk/blog/2014/07/06/testing-django-websites/</a>
+					</div>
+			
+
 
 				<!--<div class="grid_8">
 					<h2 class="head1">Contact Form</h2>

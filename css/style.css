@@ -98,7 +98,7 @@ p {
 }
 
 #mediump0{
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	text-align: justify;
 	line-height: 120%;
 	font-size: 16pt;
@@ -106,7 +106,7 @@ p {
 }
 
 #mediump{
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	text-align: justify;
 	line-height: 120%;
 	color: #8cb2aa;
@@ -611,7 +611,6 @@ a.gal:hover img{
 }
 
 .blog {
-	padding-top: 12px;
 	overflow: hidden;
 }
 
@@ -708,7 +707,7 @@ ul.list.l1+ul.list.l1 {
 }
 
 h2.head1 {
-	padding-top: 53px;
+	padding-top: 20px;
 	font-weight: 300;
 	margin-bottom: 36px;
 	color: #000;
