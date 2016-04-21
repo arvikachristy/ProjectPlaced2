@@ -827,3 +827,20 @@ footer a:hover {
     background-position: right 0;
     outline: medium none;
 }
+
+
+/*Table css*/
+
+table{
+	width:100%;
+    border-collapse: collapse;
+
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+}
+
+th {
+    height: 50px;
+}
