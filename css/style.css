@@ -163,7 +163,7 @@ ul.list li:after {
   	color: #a2cac2;
 }
 ul.list li+li {
-	margin-top: 16px;
+	margin-top: 0px;
 }
 
 ul.list1  {
