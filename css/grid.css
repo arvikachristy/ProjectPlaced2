@@ -53,6 +53,7 @@ body {
   float: left;
   margin-left: 10px;
   margin-right: 10px;
+  line-height: 150%;
 }
 
 .push_1, .pull_1,

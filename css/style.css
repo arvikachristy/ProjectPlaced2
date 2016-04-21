@@ -31,12 +31,15 @@ text-decoration:none;
 
 
 body {
-	font: 14px/20px  'Open Sans', sans-serif;
+	font: 20px/22px  'Open Sans', sans-serif;
 	color:#8c8989;
 	background-color: #f8f8f8;
 	position:relative;
 	min-width:960px;
 	padding-top: 1px;
+	margin-bottom: 23px;
+	text-align: justify;
+	line-height: 150%;
 }
 
 .ic {
@@ -68,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 35px;
 	line-height: 30px;
 	color: #585858;
 	font-weight: bold;
@@ -78,7 +81,7 @@ h2 {
 
 
 h3 {
-	font: bold 30px/30px 'Open Sans Condensed', sans-serif;
+	font: bold 35px/35px 'Open Sans Condensed', sans-serif;
 	color: #585858;
 	padding-top: 45px;
 	margin-bottom: 46px;
@@ -88,13 +91,14 @@ h3 {
 p {
 	margin-bottom: 20px;
 	text-align: justify;
+	font-size: 17px;
 }
 
 #biggerp{
 	margin-bottom: 20px;
 	text-align: justify;
 	font-size: 18pt;
-	line-height: 120%;
+	line-height: 190%;
 }
 
 #mediump0{
