@@ -64,10 +64,8 @@
 				<a href="#chal" class="btn bt2">Challenges</a>
 				<a href="#req" class="btn bt2">Requirements</a>
 				<a href="#usecase" class="btn bt2">Use Cases</a>
-				<a href="#gantt" class="btn bt2">Gantt Chart</a>
+				<a href="#gantt" class="btn bt2">Development Plan</a>
 				<br>
-				<a href="#final" class="btn bt2">Final Requirements</a>			
-				<a href="#development" class="btn bt2">Development Plan</a>	
 				<a href="#technologies" class="btn bt2">Technologies</a>	
 				<a href="#designpattern" class="btn bt2">Design Pattern</a>	
 				</center>
@@ -331,16 +329,19 @@
 					<div class="blog bd2">
 						<div class="extra_wrapper">
 							<div class="text1">
-							<a id="gantt">Development Plan</a>
+							<a id="gantt">Development Plan - Gantt Chart</a>
 							</div>
-							<div id="mediump0">Below is the graph of our current Gantt Chart which we will update bi-weekly. The structure of the chart is still tentative and will be updated along the way during development process.</div>
+							<div id="mediump0">Below is the graph of our Gantt Charts. The status of both charts were taken at the end of each term milestones.</div>
+							<h2>Gantt chart until 15th of December 2015 - First Term Plan</h2>		
+							<img src="images/ganttchart1.jpg"><br>
+							<br><br>									
 						</div>
-					</div>			
-					<center>
-					<br><img src="images/Gantt-4dec15.jpg">
-				</center>
+					</div>	
+					<h2>Gantt chart until 24th of April 2016 - Second Term Plan</h2>		
+					<center><img src="images/ganttchart2.jpg"></center>								
 
-					<br><hr><br>
+<hr>
+					<br><br>
 					<hr><br>
 
 					<div class="blog bd1">
@@ -380,17 +381,17 @@
 							<br>
 							<div id="mediump0">
 							One philosophy is that Models should include all relevant domain level logic - "Following Martin Fowler's Active Record design pattern, models should encapsulate every aspect of an object". The models we have created not only define the actual data in the model class, but also information about the model. We return a human-readable representation of each model using the __str__ method. This made it easier to handle model instances and test models using Django's QuerySet API.
-							<br>Martin Fowler's Active Record design pattern:  <a href="http://www.martinfowler.com/eaaCatalog/activeRecord.html">http://www.martinfowler.com/eaaCatalog/activeRecord.html</a>
-							<br>Django QuerySet API reference: <a href="https://docs.djangoproject.com/en/1.9/ref/models/querysets/">https://docs.djangoproject.com/en/1.9/intro/tutorial05/</a>
+							<br><a href="http://www.martinfowler.com/eaaCatalog/activeRecord.html" style="color: #CC0000">Martin Fowler's Active Record design pattern</a>
+							<br><a href="https://docs.djangoproject.com/en/1.9/ref/models/querysets/" style="color: #CC0000">Django QuerySet API reference</a>
 							<br><br>
 							<div id="mediump0">
 							In our code, we are using Django's database API and do not rely on importing other modules or helper objects. Following some of their advice on their database optimisation page, we get items from the database by writing queries which use the item's index (rather than the name for example). We also try not to make unecessary queries.
-							<br>Django Database Optimization: <a href="https://docs.djangoproject.com/en/1.9/topics/db/optimization/">https://docs.djangoproject.com/en/1.9/topics/db/optimization/</a>
+							<br><a href="https://docs.djangoproject.com/en/1.9/topics/db/optimization/" style="color: #CC0000">Django Database Optimization</a>
 							<br><br>
 							<div id="mediump0">
 							With regards to templates, Django's template system is a tool to control presentation and presentation-related logic. In our project, we have created the frontend using AngularJS and Ionic, then integrated it with Django's template system as best as we could. We also had a look at Django's templete inheritance, but we found we didn't require it as we didn't have any elements that would remain across all templates (even the header was modified slightly each time).
 							<br>
-							<br>Django design philosophies main page: <a href="https://docs.djangoproject.com/en/1.9/misc/design-philosophies/">https://docs.djangoproject.com/en/1.9/misc/design-philosophies/</a>
+							<br><a href="https://docs.djangoproject.com/en/1.9/misc/design-philosophies/" style="color: #CC0000">Django design philosophies main page</a>
 							
 
 							</div>				

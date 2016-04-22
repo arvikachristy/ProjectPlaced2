@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+				<meta charset="utf-8">
 		<title>Testing</title>
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="shortcut icon" href="images/unitPP.png">
@@ -60,20 +61,22 @@
 <!--==============================Button direct=================================-->			
 				<div class="contentme">
 				<center><h2>Content</h2>
-				<a href="#unit" class="btn bt2">Unit Testing</a>
-				<a href="#functional" class="btn bt2">Functional Testing</a>
-				<a href="#integration" class="btn bt2">Integration Testing</a>
-				<a href="#useraccept" class="btn bt2">User Acceptance Testing</a>
-				<a href="#Technical" class="btn bt2">Technical Testing</a>
+				<a href="#intro" class="btn bt2">Introduction</a>
+				<a href="#useraccept" class="btn bt2">User Acceptance Testing</a>				
+				<a href="#angularjs" class="btn bt2">AngularJS Testing</a>
+				<br>
+				<a href="#django" class="btn bt2">Django Testing</a>
+				<a href="#resources" class="btn bt2">Resources</a>
 				</center>
 
 				<br><br>
 				</div>
 <!--==============================Button direct=================================-->		
+
 				<br>
 				<h3  style="text-align: center">Initial Testing Strategies</h3>
 				
-					<h2 class="head1">Introduction</h2>
+					<h2 class="head1" id="intro">Introduction</h2>
 					<div id="mediump0">Providing tests for our code is a way to ensure that our code is working correctly. It is important because it can help us to identify code which causes errors, making debugging easier and saving us time. Of course, it would be preferable to have automated testing to help make the developing process simpler. After making some changes to the system, we can run the tests to make sure the code is still running as intended without having to go through the time consuming process of manual testing. Here are some initial strategies for testing the system that we will be using in the future.<div>
 		
 					<h2 class="head1">Unit Testing</h2>
@@ -85,14 +88,45 @@
 					<h2 class="head1">Integration Testing</h2>
 					<div id="mediump0">Integration tests cover different aspects of the system and make sure that the code is working together. For our platform, we will be writing the back end in Django and the front end in AngularJS. It is important that these aspects not only work well individually, but together as well. We have to ensure that data flow is also handled correctly.</div>
 			
-					<h2 class="head1">User Acceptance Testing</h2>
-					<div id="mediump0">To ensure satisfaction in our platform, we will be conducting user acceptance testing with our client and potential users on a regular basis. If possible, we will be looking at using a test driven development approach, where we write the necessary tests before writing the actual code. However, to do this we will have to learn how to conduct tests properly before getting started. If we find that it is difficult to recognise all the small components of the system at the beginning, we may look at a test after approach as well.</div>
+					<h2 class="head1" id="useraccept">User Acceptance Testing</h2>
+					<div id="mediump0">To ensure satisfaction in our platform, we have conducted user acceptance testing with our client and potential users.<br>	<br>
+						<ul class="list l1">
+							<li><b>Client</b><br>
+								During our last meeting with the clients, we also conducted the user testing with them as well to get an overview of a user from outer company's prespective. We received positive feedback from the UX perspective such as flows from one page to another as well as the aesthetic view of the User Interface. <br>
+								Some constructive feedback has been taken into account such as modifying misleading paragraph and instructions on the website. Potential use of the platform has also been discussed.
+							</li><br>
+							<li><b>Students</b>
+								After the final version of the platform was finalised, we conducted several user testing with fellow colleague in the computer science department and gathered their feedback. <br>
+								Some constructive feedback has been taken into account such as design and page flows.
+							</li>
+						</ul><br>							
+						<table>
+						<tr>
+						<th>Test</th>
+						<th>Result</th>
+						<tr>
+						  <tr>
+						    <td>Design</td>
+						    <td>We have made better design decisions based on the target market. We showed them the initial website and asked for improvement or other feedback from their past experiences in using team management tool. We have done early research testing in the lifecycle in order to make the platform sustainable for our client. We have provided wireframes and prototypes to begin with and compare it with the final product.</td>
+						  </tr>
+						  <tr>
+						    <td>Content</td>
+						    <td>We make sure the content of our platform is understandable, readable and easy to use. We make sure all of the desired features are there and user adaptability level is high. Based on our testing, we have improved some of the word choices within the platform to avoid confusion, as well as the placing of some description</td>
+						  </tr>	
+						  <tr>
+						    <td>Functionality</td>
+						    <td>Selected user was given the opportunity to test out all of our functional features. They have tried to save the bi weekly report, the task table and review saved reports. Comment box was also tested and we had a great feedback from the user.</td>
+						  </tr>							  					  
+
+						</tr>
+						</tr>
+					</table>
+
+					</div>
+					
 			
 					<div class="blog">
-					<h2 class="head1">Testing Django</h2>
-					<div id="mediump0"><img src="images/django.png">We can do automated testing in Django by using a collection of tests (a test suite). Django has a Test Execution Framework and various utilities to help us verify that our code is working as expected. We can write tests in Django using the unittest module, which is built into the Python standard library. We can use it to conduct both unit tests and integration tests. There are other tools/modules (and other Python Test Frameworks) that can be used (such as doctest and nose). However, when testing Django apps, tests written in unittest run the fastest, and offer a much more robust solution for testing. Then to add the tests to the Django project, we will have to add a tests.py file and put our tests inside of there. Alternatively, we can also define a tests directory.  Django documentation has helpful information and many examples that we will be using.</div>
-
-					<h2 class="head1">Testing AngularJS</h2>
+					<h2 class="head1" id="angularjs">Testing AngularJS</h2>
 					<p id="mediump0">The AngularJS documentation recommends the following tools for testing.</p>
 					<p id="mediump">Karma</p>
 					<div id="mediump0"><img src="images/karma.png"><br>
@@ -101,7 +135,11 @@
 					<p id="mediump">Jasmine</p>
 					<div id="mediump0"><img src="images/jasmine.png">
 						Jasmine is one of the most popular development frameworks used for testing angular applications. This framework also provides functions to help with structuring tests and keeping them well documented, and so it will be a useful tool to use. For the testing framework, AngularJS can be tested using any JavaScript unit testing framework. However, Jasmine is commonly used and we will be following the recommendation in the AngularJS documentation and using it as well. There seems to be really good documentation for Jasmine, which will support our testing.</div><br>
-					<div id="mediump0">Other Testing Frameworks and tools can be used (such as Mocha, Chai, Sinon, and many more). Although we will mainly be looking at unit tests, there is also a recommended tool for end to end testing called Protractor (which uses Jasmine for its test syntax).</div>
+
+					<h2 class="head1" id="django">Testing Django</h2>
+					<div ><img src="images/django.png">We can do automated testing in Django by using a collection of tests (a test suite). Django has a Test Execution Framework and various utilities to help us verify that our code is working as expected. We can write tests in Django using the unittest module, which is built into the Python standard library. We can use it to conduct both unit tests and integration tests. There are other tools/modules (and other Python Test Frameworks) that can be used (such as doctest and nose). However, when testing Django apps, tests written in unittest run the fastest, and offer a much more robust solution for testing. Then to add the tests to the Django project, we will have to add a tests.py file and put our tests inside of there. Alternatively, we can also define a tests directory.  Django documentation has helpful information and many examples that we will be using.</div>
+
+					<div id="mediump0"><br>Other Testing Frameworks and tools can be used (such as Mocha, Chai, Sinon, and many more). Although we will mainly be looking at unit tests, there is also a recommended tool for end to end testing called Protractor (which uses Jasmine for its test syntax).</div>
 					</div>
 
 				<h3  style="text-align: center">Our Django Tests</h3>
@@ -123,7 +161,7 @@
 
 					<br><br><center><img src="images/DjangoTest/ranTests.png" align="middle"></center><br>
 
-					<h2 class="head1">Resources</h2>
+					<h2 class="head1" id="resources">Resources</h2>
 					<div id="mediump0">
 					The Django documentation itself was a great resoource to aid us with testing:
 					<br>An overview to testing: <a href="https://docs.djangoproject.com/en/1.9/topics/testing/overview/">https://docs.djangoproject.com/en/1.9/topics/testing/overview/</a>
