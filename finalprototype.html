@@ -48,10 +48,10 @@
 		<div class="container_12">
 			<div class="grid_12">
 				<br><br>
-				In this section, we are going to introduce all of our platform features as well as introducing the system manual and user manual. We will also mention all of the technologies we used to build a particular sections and platforms.<br>
+				In this section, we are going to introduce all of our platform features as well as introducing the system and user manuals. We will also mention all of the tools that have we used to build the particular sections, and the justification for why we have included each feature.<br>
 				<h2>System Manual</h2>
 				<b>Compatible Devices</b>
-				<br>Most of recent Operating System is compatible to run the server side of our platform. This includes:
+				<br>Most recent Operating Systems are compatible to run the server side of our platform. This includes:
 				<br><br>
 				<ul class="list l1">
 					<li><b>Windows</b>
@@ -67,10 +67,10 @@
 					</li>
 				</ul>
 				<b>Connectivity</b>	
-				<br>For the server to run properly, make sure the device have a good connection to the internet in order to run the server properly.
+				<br>To run the server properly, make sure the device has a good connection to the internet. The page may not display properly without an internet connection.
 				<br><br>				
 				<b>Browser Support</b>			
-				<br>Most browsers are supported to run this platform. However, our frontend is built from AngularJS and Ionic Framework hence the most updated version of the web browser is highly recommended. Here is the list of our recommended web browsers:<br>
+				<br>Most browsers will support this platform. However, our frontend is built from AngularJS and the Ionic Framework hence the most updated version of the web browser is highly recommended. Here is the list of our recommended web browsers:<br>
 				<ul class="list l1">
 					<li><b>Safari</b></li>
 					<li><b>Google Chrome</b></li>
@@ -85,73 +85,80 @@
 			<div class="grid_12">
 				<h2>User Manual</h2>
 				<b>Run the system configurations</b><br>
-				In order to view set up the Project Placed Team Management tool, there are two main parts of the system; the client and the server. Make sure you are connected to the internet and through the system terminal, we will start by connecting to the server<br>
+				In order to set up the Project Placed Team Management tool, there are two main parts of the system; the client and the server. Make sure you are connected to the internet and through the system terminal, we will start by connecting to the server.<br>
 
 				To set up the server: <br>
 				<ul class="list l1">
 					<li>go to the file directory where we have placed the <b>manage.py</b> file.</li>
-					<li>Type <b>python manage.py runserver</b> in order to run the main server of the project</li>
+					<li>Type <b>python manage.py runserver</b> in order to run the main server of the project.</li>
 				</ul>
 				<br>
 				<center><img src="images/server.jpg" height="450" width="600"></center>
 				<b><br>Run the platform</b><br>
-				To run the platform itself, we are going to set up the platform using Google Chrome with the localhost 8000 as the example. To do this, just write on your browser <b>localhost:8000/trackprogress</b> and the platform will show up.
+				To run the platform itself, we are going to set up the platform using Google Chrome with the localhost 8000 as the example. To do this, just type the following URL on your browser <b>localhost:8000/trackprogress</b> and the platform should show up.
 				<h2>Platform Features</h2>
+
+				There are two versions of our main page. The page seen above is the student version, which the students will use to manage their project. There is also another version of the page which the supervisor will use to check how the project is going (without having the ability to add to or modify any of the features on the students' page). In our platform, you can switch between these two pages by clicking on the button on the left of the header.<br><br>
 
 				<center><img src="images/localhost.jpg" height="490" width="950"></center><br><br>		
 
 
 				<b>The Project Banner</b><br>
-				On the project banner, you can see the name of the company and project, as well as a small description about what the project is about. There is also an image in the middle, which can be the logo of the company/project.<br>
-				This could be useful if someone is checking the page without checking previous pages related to the project which explain what the project is about. E.g. the supervisor may have a lot of projects to manage, so it could be useful to have some brief background about the project to remind them what project the page is refering to.<br><br>
+				On the project banner, you can see the name of the company and project, as well as a small description about what the project is about. There is also an image in the middle, which can be the logo of the company/project.
+				The banner would be useful to people who are checking the page without checking previous pages related to the project which explain what the project is about. E.g. the supervisor may have a lot of projects to manage, so it could be useful to have some brief background about the project to remind them what project the page is refering to.<br><br>
 
 				<b>User Visibility + Activities</b><br>
-				There are icons which display the users who are part of the project. Underneath that, there is the button which leads to the Gantt chart page, and the button which opens the comment box modal.<br>
-				The project placed frontend already includes the user visibility icons, so we can include it in our page as well. We are using project placed CSS, so our page can be consistent with the already existing designs.<br><br>
+				There are icons which display the users who are part of the project. Underneath that, there is the button which leads to the Gantt chart page, and the button which opens the comment box modal. The project placed frontend already includes the user visibility icons, so we can include it in our page as well. We are using project placed CSS, so our page can be consistent with the already existing designs.<br><br>
 				<center><img src="images/user.jpg" height="85" width="300"></center> <br><br>
 
 				<b>Status Section</b><br>
 				There is a radio button with status options. The students can choose the status option they feel best represents the current status of their project. This choice will remain on their project page until the students choose a different choice. Each choice is a different colour - either green, amber or red. There is also some text, describing what the feature is for.<br><br>
-				When interviewing a teaching assistant and the supervisor of the projects, we heard from them that they want to help assist the students with their projects as much as possible. However, it was very difficult for them to identify when projects were having difficulties. We also used the red, amber, green philosophy we had previously looked into. We also believe it is important for students to know exactly what this feature is for (which is why we have some desscription letting them now). We don't want them to feel discouraged about putting their project with major issues because that will relect poorly on them, but encouraged to select that project so they can recieve help with it.
+				When interviewing a teaching assistant and the supervisor of the projects, we heard from them that they want to help assist the students with their projects as much as possible. However, it was very difficult for them to identify when projects were having difficulties. We also used the red, amber, green philosophy we had previously looked into. We also believe it is important for students to know exactly what this feature is for (which is why we have some desscription letting them know). We don't want them to feel discouraged about putting their project with major issues because that will relect poorly on them, but encouraged to select that project so they can recieve help with it.
 				<br><br>
 				We used <a href="https://material.angularjs.org/latest/" style="color: #CC0000">Angular Material</a> - a UI Component framework. We used it to give the radio buttons an appealing design. It worked well with our project as we are using Angular for the front end, and was easy to implement.<br><br>	
 				<center><img src="images/status.jpg" height="385" width="650"></center> 			
 				<br><br>			
 
+				<br>On the supervisor page, the supervisor (or TA/client etc) may give their own opinion of the status (so the status of the students and the status of the teaching assistants are separate. On the supervisor page, we have implemented a table which tracks the changes in the status options chosen by the students and those chosen by the supervisor. We believe that this shows an overview of how the project is going by tracking changes over time. The chart has been implemented with <a href="http://chartit.shutupandship.com/" style="color: #CC0000">Django Chartit.</a>  
+	
+				<br><br>//TODO - Talk about Placed Score!
+				<br>//TODO - The Placed Score is very important to Project Placed! We believe that this tracking of status over time can contribute to the Placed Score.<br><br>
+
+				<center><img src="images/statusgraph.png"></center><br><br>	
+
 				<b>Gantt Chart</b><br>
-				From the main page, we can access the Gantt Chart section. This is the page with the gantt chart on it. There are functions to search and filter the tasks as well as the ability to specify the date range you would like to view.<br><br>
-				It makes sure the development of the project is on time and can be viewed based on timeline, milestones or sprint. You can customized the tasks to be done by dragging it around (to improve user experience) and place it on the desired date. <br><br>
-				Dependencies between tasks are also available to make sure the user does not have to hassle in re-organizing the deadlines. <br><br>
-				We wanted a method of tracking the tasks/ plans of the project over a period of time. We've temporarily implemented a gantt chart because in our own projects, we have used the gantt charts many times to display the development plan, and it was good to include a system that students are used to using. However, in the future, the gantt chart can be replaced with any other methods of tracking progress. <br><br>
-				This is using <a href="https://www.angular-gantt.com/" style="color: #CC0000">Angular Gantt</a> (which is a gantt chart component for AngularJS). We've stripped and modified some features from the original Angular Gantt - keeping the functionality but making sure users aren't confused by the large selection of unnecessary options.<br><br>
+				From the main page, we can access the Gantt Chart section. This is the page with the gantt chart on it. There are functions to search and filter the tasks as well as the ability to specify the date range you would like to view.
+				It makes sure the development of the project is on time and can be viewed based on timeline, milestones or sprints. You can customize the taskss to be done by dragging them around (to improve user experience) and placing them on the desired date.
+				Dependencies between tasks are also available to make sure the user does not have to deal with re-organizing the deadlines. <br><br>
+				We wanted a method of tracking the tasks/ plans of the project over a period of time. We've temporarily implemented a gantt chart because in our own projects, we have used the gantt charts many times to display the development plan, and it was good to include a system that students are already accustomed to. However, in the future, the gantt chart can be replaced with any other methods of tracking progress. <br><br>
+				This is using <a href="https://www.angular-gantt.com/" style="color: #CC0000">Angular Gantt</a> (which is a gantt chart component for AngularJS). We've stripped and modified some features from the original Angular Gantt - keeping the functionality but making sure users aren't confused by the large selection of options.<br><br>
 
 				<center><img src="images/gantt.jpg" height="490" width="950"></center>		
 				<br><br>
 				<b>Comment Box</b><br>
-				Another feature is the comment box. When you click on the comment box button, a modal opens. In this modal, the student can write their name, as well as their message, and post it for others to see.<br><br>
-				This wasn't included in our initial requirements, but was a bonus feature that we decided to add because. We believe from experience working with teams in university, communication is a very important key in a team project. It is possible that after viewing the page, the TA or supervisor would like to leave a comment for the students about how their project is going, so it would be useful to have such a feature.<br>
+				Another feature is the comment box. When you click on the comment box button, a modal opens. In this modal, the student can write their name, as well as their message, and post it for others to see.
+				From our experiencies working with teams with the past at university, we believe that communication is a very key point in team projects. Our interviews with other students also told us that they felt the same way, and bad communication was one of the big problems that they sometimes faced. We decided that to have a comment box on the page which would allow all people associated with the project to leave comments and feedback that will be seen by other members.<br><br>
 				<center><img src="images/commentbox.jpg" height="550" width="650"></center>	<br>
 
 				<b>Request Resources</b> <br>
-				Under the status radio buttons, there is a button which opens a modal. In this modal, the students can send a request to their supervisor/ teaching assistant requesting any resources that they require. They can select (from a selection of options) exactly what resource they require and how urgently they need it, as well as leave a comment with more details.<br><br>
+				Under the status radio buttons, there is a button which opens a modal. In this modal, the students can send a request to their supervisor/ teaching assistant requesting any resources that they require. They can select (from a selection of options) exactly what resource they require and how urgently they need it, as well as leave a comment with more details.
 				From our interview with the supervisor/ TA we heard that their experience with projects is that many times students don't ask for resources from them, even though they really require it. By including a request resources option, we want to encourage students to be more vocal if they need anything, and we want to make it easier for the supervisor to be aware of exactly what resources each project needs.<br><br>
 				We also used Angular material for the radio buttons, since we had already implemented it in the status section. Everything is contained within an ionic modal (which is opened by an appropriate controller).<br><br>
 				<center><img src="images/request.jpg" height="550" width="650"></center><br><br>
 
 				<b>Task Table</b> <br>
-				The students can add, edit, and delete the tasks they are working on to a task table on the page. They can also search through the task list with keywords.<br><br>
-				This is to help students organise their work (what is the due date on this task, who is going to complete this task etc), as well as letting supervisor/TA/client have an overview of all the tasks being worked on, so they can see if the team is on track.<br><br>
+				The students can add, edit, and delete the tasks they are working on to a task table on the page. They can also search through the task list with keywords.
+				This task table has been implemented to help students organise their work (especially when tasks are due, and who they are assigned to), as well as letting the supervisor/TA/client have an overview of all the tasks being worked on, so they can see if the team is on track.<br><br>
 				<center><img src="images/tasktable.jpg" height="300" width="800"></center> <br><br>			
 
 				<b>Bi-Weekly Index</b> <br>
-				On the index page, the biweekly report section is split into two parts. On the left pane, you can see the current biweekly report being worked on. You can view and edit the report or submit it. On the right pane, you can see a list of the previous reports that have already been submitted. Clicking on one of the previous reports will take you to a page where you can view that report (but not make any changes since the page has already been submitted).<br><br>		
-				We had discussions about what would be the best way to display the information (of what the current report is and how we would display the previous reports). We started with the idea of displaying a carousel style report but came up with the conclusion that it will not be a good choice to just display a text. So we replace it with a list of reports with a calendar next to it as a sign to display the current report that the students are working in.<br><br>			
+				On the index page, the biweekly report section is split into two parts. On the left pane, you can see the current biweekly report being worked on, in a calender form. You can view and edit the report or submit it. Before submitting, a modal appears asking for confirmation, since reports can not be edited once they are submitted. On the right pane, you can see a list of the previous reports that have already been submitted. Clicking on one of the previous reports will take you to a page where you can view that report (but not make any changes since the page has already been submitted).<br><br>		
+				We had discussions about the best way to display the information (of what the current report is and how we would display the previous reports). We started with the idea of displaying a carousel style report but decided that it will not be a good choice since there could potentially be many reports to cycle through and we only wanted to represent the biweekly reports without taking too much space. So we replaced it with a list of the reports.<br><br>			
 				<center><img src="images/biweeklyindex.jpg" height="280" width="1750"></center> <br><br>	
 
 				<b>Bi-Weekly Reports Page</b><br>
-				On the biweekly page, there are different fields that the students will fill out for their report, which will then be submitted for the clients, supervisors and TAs to see.<br><br>	
-				Students already have to create biweekly reports when working on projects. In these reports they ... and the aim of these reports is to ...  However, at the moment there is no set template to make things consistent. We believe that having a consistent template for report would be useful because of the following reasons: blah blah blah. Last term, during our research and data collection, we gathered biweekly reports from students and analysed them to see the way that students had organised their report and the content they wanted to feed back to their clients and teaching assistants through their reports. We created a set template from this. Maybe include justification of each section?
-				<br><br>	
+				On the biweekly page, there are different fields that the students will fill out for their report, which will then be submitted for the clients, supervisors and TAs to see. The current report they are working will not be able to be seen by the clients/supervisors. They are free to make as many changes as they want (saving those changes), but will not be able to make any changes to that specific report once submitted.<br><br>	
+				Students already have to create biweekly reports when working on projects. The aim of these reports is to give an overview of the completed tasks, meetings, and any issues or challenges faced. However, at the moment there is no set template to make things consistent. We believe that having a consistent template for the reports would be useful. The students would be more aware of the information they should feedback, and it would be easier for teaching assistants to look through many projects since they have a consistent format. Last term, during our research and data collection, we gathered biweekly reports from students and analysed them to see the way that students had organised their reports. We created a set template from this.
 
 				<center><img src="images/biweeklyreport.jpg" height="580" width="1750"></center> <br><br>
 
