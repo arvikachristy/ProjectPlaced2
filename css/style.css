@@ -37,7 +37,7 @@ body {
 	position:relative;
 	min-width:960px;
 	padding-top: 1px;
-	margin-bottom: 23px;
+	margin-bottom: 0px;
 	text-align: justify;
 	line-height: 150%;
 }
@@ -773,7 +773,6 @@ a.col2:hover {
 /************Footer***********/
 
 footer {
-	padding: 55px 0 70px;
 	display: block;
 	text-align: center;
 	font-size: 12px;

@@ -159,7 +159,7 @@
 					<div id="mediump0">We wrote some simple tests in Django to make sure that our backend code was working as intended. We followed a test-after approach, where we wrote the code and tested at the end. The tests helped us to discover issues, which we then promptly fixed, and now assure us that everything is working correctly.</div>
 					<div id="mediump0"><br>We are using Django's unittest library to conduct the tests. There were also other tools (as explained above in the initial testing strategies section), but we decided to use unittest as it ran the fastest, and there was a lot of useful information in the Django documentation which we could use. We mainly tested our views because it included most of the code running the backend of our platform.</div>
 
-					<br><br><center><img src="images/DjangoTest/01RenderTest.png" align="middle"></center>
+					<br><br><center><img src="images/DjangoTest/rendertests.png" align="middle"></center>
 					<div id="mediump0"><br>The above test is an example of one of the tests we wrote to check whether the page was rendering correctly without any errors. We use the context property of the HttpResponse to make sure that the page is not only rendering properly, but delivering the correct content to the user.</div>
 
 					<br><br><center><img src="images/DjangoTest/02DisplayTest.png" align="middle"></center>
@@ -171,7 +171,7 @@
 					<br><br><center><img src="images/DjangoTest/04NonsensePost.png" align="middle"></center>
 					<div id="mediump0"><br>In addition, we checked that sending POST requests with random data produced a Http404 response in some views, as we expected.</div>
 
-					<br><br><center><img src="images/DjangoTest/ranTests.png" align="middle"></center><br>
+					<br><br><center><img src="images/DjangoTest/rantest2.png" align="middle"></center><br>
 
 					<h2 class="head1" id="resources">Resources</h2>
 					<div id="mediump0">
@@ -227,17 +227,19 @@
 <!--==============================footer=================================-->
 		<footer>
 			<div class="container_12">
+				<div class="container_12">
 				<div class="grid_12">
-					<div class="socials">
+					<!-- <div class="socials">
 						<a href="#" class="fa fa-facebook"></a>
 						<a href="#" class="fa fa-twitter"></a>
 						<a href="#" class="fa fa-google-plus"></a>
-					</div>
+					</div> -->
 					<div class="clear"></div>
 					<div class="copy">
 						Vika Christy and Anita Ghoddoomi-Zadeh&copy; 2015<br>
 					</div>
 				</div>
+			</div>
 			</div>
 		</footer>
 		<script>
