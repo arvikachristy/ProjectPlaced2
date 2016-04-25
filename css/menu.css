@@ -227,6 +227,10 @@ nav.bt-menu  ul li a:hover, nav ul li.current  {
 }
 
 .menuholder{
-	width: 95%;
-	margin-left: 15%;
+	float: none;
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 45px;
+	-webkit-transition: 0s ease;
+}
 }
