@@ -226,3 +226,7 @@ nav.bt-menu  ul li a:hover, nav ul li.current  {
 	display: none;
 }
 
+.menuholder{
+	width: 95%;
+	margin-left: 15%;
+}
