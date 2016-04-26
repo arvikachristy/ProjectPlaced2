@@ -403,6 +403,17 @@
 
 					<br><hr><br>
 
+<div class="blog bd1">
+						<div class="extra_wrapper">
+							<div class="text1">
+							<a id="designpattern">Django Implementation</a>
+							</div>
+							<div id="mediump0">Before starting the backend implementation, we had to integrate our initial frontend written in AngularJS, with Django's template system. The controllers (Javascript files) and CSS files were moved to Django's static directory. We started our backend implementation by creating the Django models that we required. Each model defines fields for the object and maps to a single database table. For example, we created models for tasks and biweekly reports. We then started to write views, which take web requests and return web responses. We used querysets to retrieve objects from the data set and modified them using Django's forms, as well as GET/POST requests sent from the templates. Some calls were made using jQuery and Ajax. Additionally, some views returned serialized Django objects as JSON data, for the templates or controllers to make use of. </div>						
+							<br>							
+				</div>
+			</div>
+
+
 					<div class="blog bd1">
 						<div class="extra_wrapper">
 							<div class="text1">
@@ -427,18 +438,14 @@
 							With regards to templates, Django's template system is a tool to control presentation and presentation-related logic. In our project, we have created the frontend using AngularJS and Ionic, then integrated it with Django's template system as best as we could. We also had a look at Django's templete inheritance, but we found we didn't require it as we didn't have any elements that would remain across all templates (even the header was modified slightly each time).
 							<br>
 							<br><a href="https://docs.djangoproject.com/en/1.9/misc/design-philosophies/" style="color: #CC0000">Django design philosophies main page</a>
-							
-
 							</div>				
 							<br>
 						</div>
 					</div>								
-
-
-
-
 				</div>
 			</div>
+
+
 		</div>
 <!--==============================footer=================================-->
 		<footer>
